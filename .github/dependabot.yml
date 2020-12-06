@@ -1,12 +1,20 @@
 version: 2
 updates:
-  - package-ecosystem: "maven" # See documentation for possible values
+  - package-ecosystem: "maven"
     directory: "/" # Location of package manifests
     security-updates-only: true
     schedule:
       interval: "daily"
-  - package-ecosystem: "docker" # See documentation for possible values
+    ignore:
+      - dependency-name: "spring-boot-starter-parent"
+        # Wait for Springboot 2.4.0 to be more stable for example
+        versions: ["2.4.x"]
+  - package-ecosystem: "docker"
     directory: "/" # Location of package manifests
     security-updates-only: true
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "express"
+        # Ignore non-LTS versions of Java
+        versions: ["12.x", "13.x", "14.x","15.x","16.x"]
