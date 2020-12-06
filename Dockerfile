@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk:15.0.1
+FROM azul/zulu-openjdk:11.0.1
 
 ARG JAR_FILE=target/app.jar
 
