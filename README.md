@@ -1,17 +1,15 @@
 # mydependabot-exploration
 > This is a project that intentionally writes bad code and uses old dependencies
-
-
-## Prerequisites
-
+The goal is to experiment on how Dependabot and Dependabot Core will react to these and apply changes
 
 
 ## Building
 
+    mvn package
 
 # Running
 
-### Create storage account with container 'terraform-state'
+You should not need to run this project as it just demonstrates bad code
 
 ## Release History
 
@@ -20,15 +18,13 @@
 
 ## Meta
 
-Your Name – [@rjdkolb](https://twitter.com/rjdkolb)
-
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/rjdkolb/opinionated-aks-bootstrap](https://github.com/rjdkolb/)
+[https://github.com/rjdkolb/mydependabot-exploration]
 
 ## Contributing
 
-1. Fork it (<https://github.com/rjdkolb/opinionated-aks-bootstrap/fork>)
+1. Fork it (<https://github.com/rjdkolb/mydependabot-exploration/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
