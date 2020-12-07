@@ -11,7 +11,7 @@ updates:
     - dependency-name: org.springframework.boot:spring-boot-starter-parent
       versions:
       - "> 2.2.0.RELEASE"
-      - "< 3"
+      - "< 2.4.0"
   - package-ecosystem: "docker"
     directory: "/" # Location of package manifests
     security-updates-only: true
@@ -20,7 +20,7 @@ updates:
       time: "07:30"
     open-pull-requests-limit: 10
     ignore:
-    - dependency-name: org.springframework.boot:spring-boot-starter-parent
+    - dependency-name: azul/zulu-openjdk
       versions:
       - "> 11.0.1"
       - "< 12.0.0"
